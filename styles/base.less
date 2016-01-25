@@ -11,9 +11,13 @@ atom-text-editor, :host {
 }
 
 atom-text-editor, :host {
+  .wrap-guide {
+    background-color: @base02 !important;
+  }
+
   .invisible-character,
   .indent-guide {
-    color: @base01;
+    color: @base02;
   }
 
   .gutter {
@@ -22,6 +26,7 @@ atom-text-editor, :host {
 
   .gutter .line-number {
     opacity: 1;
+    color: @base05;
   }
 
   .gutter .line-number.folded,
@@ -35,7 +40,7 @@ atom-text-editor, :host {
   }
 
   .selection .region {
-    background-color: @base02;
+    background-color: #393939;
     color: @base03;
   }
 
@@ -46,8 +51,7 @@ atom-text-editor, :host {
 }
 
 .bracket-matcher .region {
-  background-color: @base1;
-  opacity: 0.7;
+  border-bottom: 1px solid @base01;
 }
 
 .comment {
@@ -85,7 +89,7 @@ atom-text-editor, :host {
 }
 
 .variable {
-  color: #fff;
+  color: @base0;
 }
 
 .delimiter, .brace {
@@ -121,3 +125,4 @@ atom-text-editor, :host {
     }
   }
 }
+
